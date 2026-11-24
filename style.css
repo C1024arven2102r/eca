@@ -1,0 +1,85 @@
+/* ECA STYLE TEST */* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #F4F8FC;
+    color: #172B4D;
+    text-align: center;
+}
+
+header {
+    background-color: #172B4D;
+    color: white;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #B9DDF7;
+    font-size: 14px;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+main h2 {
+    color: #172B4D;
+    margin-bottom: 15px;
+}
+
+main p {
+    color: #60758C;
+    line-height: 1.8;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 30px 10px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #DCE8F2;
+    border-radius: 14px;
+    padding: 25px 15px;
+    box-shadow: 0 3px 10px rgba(23, 43, 77, 0.08);
+    text-align: right;
+}
+
+.card h3 {
+    color: #172B4D;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.card p {
+    color: #60758C;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+@media (min-width: 600px) {
+    .dashboard {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 599px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}
+
