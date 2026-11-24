@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECA | Calendar</title>
+
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+
+    <header>
+        <h1>ECA</h1>
+        <p>Educational & Cultural Activities</p>
+    </header>
+
+    <main>
+
+        <h2>تقویم مناسبت‌ها</h2>
+        <p>مدیریت و مشاهده مناسبت‌های آموزشی و فرهنگی مدرسه</p>
+
+        <div class="month-selector">
+            <label for="month">انتخاب ماه:</label>
+
+            <select id="month">
+                <option>مهر</option>
+                <option>آبان</option>
+                <option>آذر</option>
+                <option>دی</option>
+                <option>بهمن</option>
+                <option>اسفند</option>
+                <option>فروردین</option>
+                <option>اردیبهشت</option>
+                <option>خرداد</option>
+            </select>
+        </div>
+
+        <div class="calendar-grid">
+
+            <div class="day-name">شنبه</div>
+            <div class="day-name">یکشنبه</div>
+            <div class="day-name">دوشنبه</div>
+            <div class="day-name">سه‌شنبه</div>
+            <div class="day-name">چهارشنبه</div>
+            <div class="day-name">پنجشنبه</div>
+            <div class="day-name">جمعه</div>
+
+            <div class="date" onclick="selectDay(this)">۱</div>
+            <div class="date" onclick="selectDay(this)">۲</div>
+            <div class="date" onclick="selectDay(this)">۳</div>
+            <div class="date" onclick="selectDay(this)">۴</div>
+            <div class="date" onclick="selectDay(this)">۵</div>
+            <div class="date" onclick="selectDay(this)">۶</div>
+            <div class="date" onclick="selectDay(this)">۷</div>
+            <div class="date" onclick="selectDay(this)">۸</div>
+            <div class="date" onclick="selectDay(this)">۹</div>
+            <div class="date" onclick="selectDay(this)">۱۰</div>
+            <div class="date" onclick="selectDay(this)">۱۱</div>
+            <div class="date" onclick="selectDay(this)">۱۲</div>
+            <div class="date" onclick="selectDay(this)">۱۳</div>
+            <div class="date" onclick="selectDay(this)">۱۴</div>
+
+        </div>
+
+        <p id="selected-date">
+            هنوز روزی انتخاب نشده است.
+        </p>
+
+        <section class="event-display">
+
+            <h3>مناسبت‌های این روز</h3>
+
+            <div id="event-list">
+                <p>برای مشاهده مناسبت‌ها یک روز را انتخاب کنید.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="calendar.js"></script>
+
+</body>
+</html>
